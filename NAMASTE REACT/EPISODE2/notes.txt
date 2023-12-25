@@ -1,0 +1,11 @@
+initializing a node js project using npm init
+supplying the prompts
+getting the package.json file
+installing parcel
+getting the package-lock.json file
+getting the NODE_MODULES folder
+installing react
+installing react dom
+commenting the CDN links
+importing react and react dom
+setting the type to module for the script element

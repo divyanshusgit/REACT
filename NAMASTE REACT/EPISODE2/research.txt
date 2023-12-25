@@ -1,0 +1,261 @@
+---
+NPM
+---
+- NPM stands for Node Package Manager
+- It is a package manager for JavaScript programming language
+- It is the default package manager for Node.js runtime
+- It allows developers to easily manage and share open-source JavaScript code libraries (packages) and is an essential tool for building modern JavaScript applications.
+- NPM is used for installing packages and their dependencies
+- NPM is used for managing dependencies
+- dependencies are listed in the package.json file
+
+-------
+PACKAGE
+-------
+- A package is a collection of JavaScript files along with a package.json file.
+- It encapsulates a reusable piece of code or a library that can be easily shared and installed using npm.
+- The package.json file provides metadata about the package, including its name, version, dependencies, and other information.
+- Developers use the npm install command to download and install packages for use in their projects. 
+
+------------
+DEPENDENCIES
+------------
+- dependencies are external packages or libraries that a project relies on to function. 
+- These dependencies are specified in the dependencies section of the package.json file. 
+
+-----------
+NPM INSTALL
+-----------
+- run npm install after cloning a project
+- to install all the dependencies of the project
+
+-------
+NODE.JS
+-------
+- Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run server-side JavaScript code
+- Created by Ryan Dahl in 2009, Node.js is built on the V8 JavaScript engine, which is the same engine that powers the Google Chrome browser.
+- It enables the execution of JavaScript code outside of a web browser, making it possible to use JavaScript for server-side development.
+- Node.js comes with NPM
+- used for building server-side applications, such as web servers, RESTful APIs, and real-time applications
+
+-----------
+OPEN SOURCE
+-----------
+- Open Source refers to a type of software whose source code is made available to the public, allowing anyone to view, use, modify, and distribute the code.
+- The term "open source" emphasizes transparency, collaboration, and community-driven development.
+- Characteristics of open source software: 
+  - Users have access to the source code of the software
+  - Users can modify the source code to suit their needs or fix issues
+  - Users can distribute both the original and modified versions of the software to others
+  - Open source projects often have a community of developers who collaborate on the software's development, contributing code, reporting issues, and providing support.
+  - The development process and decision-making are transparent, allowing anyone to scrutinize and understand how the software is created and maintained.
+- Popular open source projects include the Linux operating system, the Apache web server, the Python programming language, and the Git version control system.
+
+--------------
+CROSS PLATFORM
+--------------
+- Cross Platform refers to the ability of software or applications to run on multiple computing platforms, such as different operating systems or architectures, with little or no modification. The goal is to develop software that can be deployed and used seamlessly across diverse environments.
+
+-------------------
+RUNTIME EnVIRONMENT 
+-------------------
+- RTE refers to the infrastructure or set of services that provides the necessary resources for a software program to run and execute.
+- The runtime environment includes components such as libraries, compilers, and virtual machines that are essential for the execution of a program's code.
+
+--------------
+JAVASCRIPT RTE
+--------------
+- the primary runtime environment for JavaScript is the browser
+- there are also server side JavaScript RTEs that allow JavaScript code to be executed outside the browser
+- Browser Runtime
+  - V8 (JavaScript runtime developed by google for chrome browser) (also used in node.js runtime)
+  - SpiderMonkey (JavaScript runtime engine used in Mozilla Firefox)
+  - JavaScriptCore(Nitro) (JavaScript engine used in Safari browser)
+- Server Side Runtime
+  - built on Chrome's V8 engine
+  - allows JavaScript to be used for server side scripting
+- Mobile Runtime
+  - React Native (not a standalone runtime) (allows developers to use JavaScript to build mobile applications) 
+- Desktop Application Runtime 
+  - Electron (combines Chromium rendering engine and node.js) (Enables the development of cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript)
+
+------------------
+JAVASCRIPT ENGINES
+------------------
+- A JavaScript engine is a program or interpreter that executes JavaScript code
+- It's responsible for interpreting and running JavaScript programs, converting the human-readable JavaScript source code into machine code that can be executed by the computer's hardware
+- JavaScript engines are a crucial component of web browsers and other environments where JavaScript is used.
+- Popular JavaScript engines: V8, SpiderMonkey, JavaScriptCore(Nitro)
+
+--------
+NPM INIT
+--------
+- the npm init command is used to initialize a node.js project and create a package.json file
+- when we run npm init command the npm initiates an interactive process to gather information about our project
+- it prompts you for various details about your project, such as the package name, version, description, entry point (main file), test command, repository, keywords, author, and license.
+- a package.json file is generated after answering all the prompts
+
+-----------------
+PACKAGE.JSON FILE
+-----------------
+- The package.json file is a JSON (JavaScript Object Notation) file that contains essential information about a Node.js project. It is typically located at the root of the project directory.
+- The package.json file is typically created when you initialize a new Node.js project using the npm init command
+- Purpose
+  - Metadata (it stores metadata including project name, version, description, entry point, scripts, dependencies)
+  - Dependency Management (It provides a centralized place to list and manage project dependencies, ensuring that all developers working on the project use the same versions of libraries and modules.)
+  - Script Execution (It allows you to define custom script that can be executed using the npm run command)
+  - Configuration (It serves as a configuration file for npm and other tools, specifying various settings related to the project.)
+
+-------
+BUNDLER
+-------
+- A bundler is a tool used in web development to bundle and package JavaScript and other web assets for deployment.
+- The primary purpose of a bundler is to combine and optimize these resources, making them more efficient for browsers to download and execute.
+- Popular Bundlers
+  - Webpack (highly configurable and extensible)
+  - parcel (simple and offer zero config approach) (handles many tasks automatically)
+
+--------------------------
+FUNCTIONALITIES OF BUNDLER
+--------------------------
+- JavaScript Module Bundling
+  - Bundlers analyze the modules (present in the modular structure of the project), resolve the dependencies, and bundle them into a single or multiple output files
+- Dependency Management
+  - Bundlers understand and handle dependencies from npm
+- Code Transformation
+  - Bundlers can transform code written in languages like JSX or TypeScript into standard JavaScript that browsers can understand.
+- Asset Management
+  - Bundlers can also handle stylesheets, images, fonts, and other assets. They may use loaders and plugins to process and optimize these resources. 
+- Code Splitting
+  - bundlers can facilitate code splitting, where the application is divided into smaller chunks. This helps in optimizing initial load times by only loading the necessary code for a particular route or feature.
+- Minification and Uglification
+  - Bundlers often include minification and uglification processes, reducing the size of the bundled code by removing whitespace, renaming variables, etc.
+- Optimizations
+  - Bundlers integrate various plugins for additional optimizations.
+- Development Build Features
+  - During development, bundlers often offer a watch mode that automatically rebuilds the bundle when source files change.
+- Production Build Features
+  - For production, bundlers generate optimized and compressed bundles suitable for deployment.
+
+-----------------
+DEVELOPMENT PHASE
+-----------------
+- The primary goal of the development phase is to create and implement the functionality and features of a web application.
+- Developers concentrate on writing, testing, and refining code to achieve the desired functionality.
+- Developer work on their local machines and use development servers (which provide features like live reloading)
+- The builds aren't optimized much because currently the goal is the build.
+- Development dependencies are used 
+- Placeholder and mock data are used
+
+----------------
+PRODUCTION PHASE
+----------------
+- The primary goal of the production phase is to prepare the application for deployment to a live environment, making it available for end-users.
+- Emphasis shifts towards performance, security, and optimizations.
+- Live Servers are used to deploy the project so that the end users have access to the application
+- Optimizations, minification and compressions are done (reduces file size)
+- Caching strategies are implemented
+- Optimized builds are created 
+- Production dependencies are used
+- Real Data is used 
+- Security Measures are implemented
+- Monitoring tools are used
+- Scalability considerations are done
+
+-------
+-D FLAG
+-------
+- we use the -D flag while installing dependencies
+- the -D flag specifies that the dependency is to be installed as a dev depe
+
+-----------------------------------------
+DEPENDENCY CATEGORIZATION BY PACKAGE.JSON
+-----------------------------------------
+- the dev dependencies are mentioned in the devDependencies section of the package.json file
+- and the production dependencies or the normal dependencies are mentioned in the dependencies section of the package.json file
+
+-----------------
+PACKAGE.LOCK JSON
+-----------------
+- it is created when we install a dependency using the npm install command
+- The primary purpose of package-lock.json is to ensure deterministic and reproducible builds. It locks down the versions of all dependencies, including sub-dependencies, to specific versions that were used when the npm install command was initially run.
+- It specifies the exact version of each package and its dependencies that should be installed. This ensures that every time someone else or another environment installs dependencies, the same versions are used.
+
+------------------------
+BOTH DO VERSION TRACKING 
+------------------------
+- package.json is like a high level manifest file stores the version ranges of the dependencies and not the exact snapshot of that particular version
+- package-lock.json keeps a detailed track of the versions of the dependencies
+- package-lock.json helps to address the potential inconsistencies that may arise due to version ranges specified in package.json
+
+----------------------------------
+PACKAGE.JSON v/s PACKAGE-LOCK.JSON
+----------------------------------
+- Package.json stores
+  - metadata (project name, description, entry point, scripts, keywords, author and license)
+  - high level specifications of required packages and their version ranges 
+  - custom scripts
+  - general config
+- Package.json purpose:
+  - High level manifest (Describes the project, its metadata, and the intended dependencies.)
+  - developers intent (Specifies the acceptable version ranges for dependencies.)
+  - Flexibility: Allows developers to define and manage project details.
+- Package-lock.json stores:
+  - Detailed Dependency Tree: Exact versions of all direct and transitive dependencies, including sub-dependencies.
+- Package-lock.json purpose:
+  - Deterministic Builds: Ensures that installations are consistent and reproducible across different environments.
+- Package.json guides, Package-lock.json resolves
+- Developers typically edit package.json to define project metadata, dependencies, and scripts.
+- Developers do not typically edit package-lock.json manually. It is automatically generated and managed by npm during dependency installations.
+
+------------
+NODE_MODULES
+------------
+- is the directory that stores the dependencies that we have installed
+- it contains the actual code of the packages (direct as well as indirect dependencies)
+- it is automatically generated when we use the npm install command for the first time
+- it includes the direct dependencies as well as the transitive dependencies
+- it is included in the project's .gitignore file so that the huge node module direct doesn't get pushed to our repo
+- we don't push it to our repo, because it can be generated again using the package.json file and the package-lock.json file 
+- so we push the package.json file and package-lock.json file to the git
+- clone a repo, this repo should contain the package.json file and the package-lock.json file, run npm install command, and then the NODE_MODULES folder will be regenerated
+
+---------
+GITIGNORE
+---------
+- When you create a .gitignore file in your project, you can define patterns for filenames, file extensions, or entire directories that you want Git to exclude from version control.
+- using # for comments in gitignore file
+
+-----------
+DIST FOLDER
+-----------
+- dist stands for distribution
+- the dist folder contains the minified, compressed, bundled and optimized code.
+- it contains the code that is ready for deployment
+- is put inside the gitignore file because it can be generated again using the source code.
+
+-------------
+.PARCEL_CACHE
+-------------
+- is created by the parcel bundler to store cached data
+- the cache helps avoid reprocessing files that haven't changed, reducing build times.s
+- if the parcel bundler didn't posses this .parcel-cache feature, it would reprocess the unmodified files of the project also
+- hence this .parcel-cache helps speeding up the build process 
+- it isn't pushed to git
+- it is included in the git ignore file because it's specific to the local machine and build process.
+- Different developers or build environments may have different cache contents.
+- Excluding it from version control allows each developer to generate their own cache as needed.
+
+---------------------
+NPX PARCEL INDEX.HTML
+---------------------
+- the parcel initiates the bundling process
+- then parcel creates a development build for our project
+- the index.html serves as the entry point for the bundling process
+- Parcel uses this file to start analyzing and bundling your project.
+- Parcel scans the index.html file and identifies all the dependencies, including JavaScript, CSS etc.
+- Parcel automatically configures the bundling process based on the types of files it encounters. It doesn't require extensive configuration files by default, making it easy to get started.
+- Parcel applies transformations and optimizations to the assets based on their types
+- parcel crates the dist folder for storing the optimized and bundled code
+- parcel starts a local development server (this server supports HMR)
+- parcel enters watch mode (the mode in which parcel keeps an eye on our file, in search of changes, when we make changes and save, parcel triggers a new build and updates the browser)

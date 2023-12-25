@@ -1,0 +1,26 @@
+WHAT IS NPX?
+- npx is a package manager tool which comes with the npm package manager and it is used to executed the node.js packages
+- npm simplifies the use of npm packages by allowing you to execute commands without the need for global installations
+- when we run a npx parcel index.html command 
+  - npx checks if parcel-bundler is already installed locally in our project's node_modules folder
+  - if it doesn't found it there, it will install the parcel-bundler locally into the node_modules folder
+  - npx runs the specified command 
+  - after the command completes the parcel-bundler is discarded
+
+WHAT IS TREE SHAKING?
+- It is used to eliminate dead (unused) code from your final bundled JavaScript output.
+- The goal is to reduce the size of your JavaScript bundles by excluding parts of the code that are not actually being used in your application.
+- This helps improve the overall performance of your web application by reducing the amount of JavaScript that needs to be downloaded and executed by the browser.
+
+WHAT IS HOT MODULE REPLACEMENT?
+- It is a feature that allows developers to update modules in an application without a full page refresh.
+- Instead of reloading the entire page, HMR replaces, adds, or removes modules that have been modified, providing a more seamless and faster development experience.
+
+WHY SHOULD I NOT MODIFY THE PACKAGE-LOCK.JSON?
+- It is automatically managed by npm. Manually modifying it could lead to inconsistencies and conflicts with the actual state of your project's dependencies.
+
+BROWSER LISTS
+
+CARET AND TILE
+
+SCRIPT TYPES IN HTML

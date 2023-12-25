@@ -1,0 +1,27 @@
+{
+  "name": "episode2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshusgit/REACT.git"
+  },
+  "author": "chinu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyanshusgit/REACT/issues"
+  },
+  "homepage": "https://github.com/divyanshusgit/REACT#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

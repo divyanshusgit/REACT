@@ -29,6 +29,28 @@ LIBRARY
 
 
 
+---------------------
+LIBRARY v/s FRAMEWORK
+---------------------
+- Library is a collection of pre-written code that we can use.
+- A framework provides a pre-defined structure for development.
+- Libraries don't dictate the overall structure or flow of our application. 
+- Frameworks dictate the flow of application.
+- Library are usually flexible. We can choose which part of a library we want to use. 
+- A framework comes with a set structure and conventions which limit flexibility.
+- Libraries are typically smaller in size.
+- Framework are typically larger in size.
+- Libraries have lower learning curve.
+- Frameworks have higher learning curve.
+
+
+
+
+
+
+
+
+
 -----------------------------------
 JAVASCRIPT LIBRARIES AND FRAMEWORKS
 -----------------------------------
@@ -189,8 +211,3 @@ DOM MANIPULATIONS ARE COSTLY
 - making frequent changes to the Document Object Model (DOM) of a web page can have performance implications. 
 - The DOM represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text content.
 - manipulating DOM means making changes on the tree structure. Operations like adding, removing, or modifying elements can trigger the browser to re-render parts of the page, recalculate styles, and potentially trigger layout and paint operations. These operations are computationally expensive and can lead to performance bottlenecks, especially when dealing with large or complex web pages.
-
-
-
-// a spell checker for vs code for text files
-// does github autopilot work for text files?

@@ -5,6 +5,8 @@ WHERE TO PLACE THE REACT CDN LINKS?
 WHAT ARE REACT AND REACT DOM ACTUALLY?
 - React and React DOM are actually objects (log it on the console and see)
 
+REACT.CREATEELEMENT AND REACTDOM.CREATEROOT AND .RENDER METHOD
+
 REACT ELEMENTS REQUIRE UNIQUE KEY
 - In React, when rendering a list of elements, each element in the list is required to have a unique identifier known as a "key." The key is a special string attribute that helps React identify which items have changed, been added, or been removed in a list. This key is used to optimize the reconciliation process, ensuring that the virtual DOM is updated efficiently.
 -  it's through the keys , that react understands that whether a component has been modified or not, if we don't give keys, react won't be able to identify the components unqiuely and would hence re-render the components even through they are un-modified

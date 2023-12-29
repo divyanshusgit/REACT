@@ -1,0 +1,125 @@
+-----------------------
+CREATING CUSTOM SCRIPTS
+-----------------------
+- Open your package.json file
+- Locate the "scripts" section
+- Add a new script for the development build
+  name: start
+  value: parcel index.html
+- save the package.json file
+- use: npm run start
+- we can make additional configurations like specifying the port number like: parcel index.html --8080
+
+---------------------
+CREATING A PROD BUILD
+---------------------
+- remove the main configuration from the package.json file 
+- and then run the custom script for creating a prod build
+- but this prod build doesn't give a link (not understood why)
+
+-------------------
+REACT.CREATEELEMENT
+-------------------
+- this function returns a JavaScript function that represents a react element
+- this object contains data about the react element like the $$typeof, type, props, key, props (which contains id, className, children)
+
+--------------------------
+BTS OF REACT.CREATEELEMENT
+--------------------------
+- the react.createElement creates a virtual DOM element (which is actually a JavaScript object)
+- then reacts starts it's reconciliation (which involves rendering to make a new virtual dom, diffing to calculate minimum differences that needs to be done, commit phase to update the actual dom, creation of new virtual dom) 
+- after react has successfully and efficiently updated the actual DOM, the browser renders it
+
+--------------
+RECONCILIATION
+--------------
+- the first step in this is rendering in which a new virtual dom is constructed
+- then diffing is done
+- now the commit phase of the reconciliation starts which involves updating the actual dom
+- and in this commit phase new HTML elements are created if necessary, updating existing HTML elements, removing HTML elements  
+
+-------
+DIFFING
+-------
+- means doing the calculations about what's the minimum changes to be made on the older virtual DOM to get to the new Virtual dom 
+
+-----------
+VIRTUAL DOM
+-----------
+- React maintains a lightweight copy of the actual DOM, known as the virtual DOM. This virtual representation allows React to perform updates more efficiently.
+
+-------
+WHY JSX
+-------
+- JSX stands for JavaScript XML
+- It is a syntax extension for JavaScript that looks similar to XML or HTML. 
+- It is commonly used with React to write UI components more concisely and with a syntax that closely resembles the final output.
+- JSX is more readable that React.createElement syntax
+- JSX create UI components are more precise than React.createElement created UI components
+- JSX facilitates easy embedding of JavaScript expressions than React.createElement 
+- JSX is supported by most modern IDEs
+- JSX code is transpiled into normal JavaScript using Babel
+- but JSX is syntactic sugar, the JSX code is transformed into the corresponding React.createElement calls during the build process
+
+-----
+BABEL
+-----
+- It transpile modern JavaScript code, including JSX, into a version of JavaScript that is compatible with a wide range of browsers. 
+- JSX, being a syntactic extension for JavaScript, is not natively understood by browsers, so it needs to be transformed into standard JavaScript before it can be executed.
+
+----------
+COMPONENTS
+----------
+- a component is a reusable, self-contained piece of code that defines a part of a user interface
+- Components are the building blocks of a React application
+- they encapsulate the logic and rendering behavior for a specific part of the UI.
+- Functional components are simple JavaScript functions that take in props (short for properties) as arguments and return React elements that describe what should be rendered.
+- They are also known as stateless components because they don't have their own internal state. They are primarily used for presenting UI based on the props they receive
+- the initial Functional components couldn't hold or manage local state (they were state less)
+- and the introduction to hooks addressed this limitation
+- a Functional component typically returns some jsx, which is then converted into React.createElement like structure
+
+--------------------------------
+RENDERING A FUNCTIONAL COMPONENT
+--------------------------------
+- rendering a functional component is little different from rendering a react element or jsx
+- for rendering functional components we need to use <ComponentName/>
+- some ways of using functional component inside a functional component are as follows
+  - <CompName></CompName>
+  - {CompName()}
+
+---------------------
+JAVASCRIPT INSIDE JSX
+---------------------
+- we can write JavaScript expressions inside jsx 
+- this is a powerful feature of jsx
+- but we need to wrap our javascript code inside {} so that react is able to distinguish between regular text and javascript expressions
+
+------------------------------------------
+WHAT IF WE INCLUDE DYNAMIC DATA INSIDE JSX
+------------------------------------------
+- If we include dynamic data into our jsx, react will automatically escape special characters to prevent potential security vulnerabilities like cross side scripting attacks. 
+- if we try to have some script inside our jsx, then react will automatically escape the content of scriptElement so that it is rendered as text not as executable javascript
+- This behavior helps to prevent the injection of malicious scripts into your application.
+- React automatically escapes the content of the scriptElement means that react automatically escapes the special characters in the scriptElement 
+- The phrase the "react automatically escape the special characters" means that react takes care of converting potentially dangerous characters into HTML entity equivalents before rendering then to the DOM  
+
+----------------------------
+CROSS SITE SCRIPTING ATTACKS
+----------------------------
+- Cross Site Scripting is abbreviated as XSS
+- is a type of security vulnerability that occurs when an attacker injects malicious scripts (usually written in JavaScript) into a web application.
+- These scripts can then be executed in the context of a user's browser, leading to potential harm.
+- Imagine you have a website where users can input text, like a comment section. If the website doesn't properly validate or sanitize the user input, an attacker might enter a malicious script in their comment. When other users view that comment, the script gets executed in their browsers.
+
+--------------------
+TYPES OF XSS ATTACKS
+--------------------
+- Stored XSS: The malicious script is permanently stored on the target server, such as in a database. It affects anyone who views the particular page containing the injected script.
+- Reflected XSS: The malicious script is embedded in a link, email, or another resource. When a user clicks on the manipulated link, the script is executed. It's often a one-time attack and doesn't persist.
+- DOM-based XSS: The attack occurs in the Document Object Model (DOM) of the web page. Malicious scripts manipulate the DOM to achieve their goals.
+- XSS can have serious consequences like: theft of sensitive information, session hijacking, malicious actions on behalf of the user
+- Prevention of XSS:
+  - validate and sanitize input
+  - user frameworks and libraries with build in protections
+  - implement Content Security Policy (CSP)

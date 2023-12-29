@@ -1,0 +1,28 @@
+{
+  "name": "episode3",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build script.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshusgit/REACT.git"
+  },
+  "author": "chinu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyanshusgit/REACT/issues"
+  },
+  "homepage": "https://github.com/divyanshusgit/REACT#readme",
+  "dependencies": {
+    "parcel": "^2.10.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

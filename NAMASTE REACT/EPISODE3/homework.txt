@@ -1,0 +1,14 @@
+REACT.CRATEELEMENT v/s JSX
+- both are used to create react elements
+- but jsx is more readable and concise
+- JSX is just syntactic sugar, it get's converted to React.createElement call during the build process
+
+COMPONENT COMPOSITION
+- refers to the practice of building complex user interfaces by combining or nesting smaller, reusable components
+- instead of creating one monolithic and large component to handle all aspects of a user interface, you break down the UI into smaller, more manageable pieces, each responsible for a specific functionality or visual representation
+
+<COMP></COMP> v/s <COMP/> v/s COMP()
+- first and second are standard way (JSX syntax)
+- we can use <comp/> if our component doesn't have any children
+- compName() is also valid way, but it is not jsx
+- 

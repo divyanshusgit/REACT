@@ -20,7 +20,12 @@ WHY SHOULD I NOT MODIFY THE PACKAGE-LOCK.JSON?
 - It is automatically managed by npm. Manually modifying it could lead to inconsistencies and conflicts with the actual state of your project's dependencies.
 
 BROWSER LISTS
+Browserslist can specify which browsers your web application can run in, it provides a configuration for specifying browsers range
 
 CARET AND TILE
+^1.2.3 allows updates to any version from 1.2.3 up to, but not including, 2.0.0.
+~1.2.3 allows updates to any version from 1.2.3 up to, but not including, 1.3.0.
+caret is generally suitable for projects where you are confident that updates within the same major version are backward-compatible.
+tilde is often used when you want to receive bug fixes and minor updates but want to avoid major updates that may include breaking changes.
 
 SCRIPT TYPES IN HTML

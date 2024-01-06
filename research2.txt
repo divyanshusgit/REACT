@@ -79,7 +79,7 @@ JAVASCRIPT RTE
   - SpiderMonkey (JavaScript runtime engine used in Mozilla Firefox)
   - JavaScriptCore(Nitro) (JavaScript engine used in Safari browser)
 - Server Side Runtime
-  - built on Chrome's V8 engine
+  - Node.js built on Chrome's V8 engine
   - allows JavaScript to be used for server side scripting
 - Mobile Runtime
   - React Native (not a standalone runtime) (allows developers to use JavaScript to build mobile applications) 
@@ -173,7 +173,7 @@ PRODUCTION PHASE
 -D FLAG
 -------
 - we use the -D flag while installing dependencies
-- the -D flag specifies that the dependency is to be installed as a dev depe
+- the -D flag specifies that the dependency is to be installed as a dev dependency
 
 -----------------------------------------
 DEPENDENCY CATEGORIZATION BY PACKAGE.JSON
@@ -261,7 +261,7 @@ NPX PARCEL INDEX.HTML
 - the index.html serves as the entry point for the bundling process
 - Parcel uses this file to start analyzing and bundling your project.
 - Parcel scans the index.html file and identifies all the dependencies, including JavaScript, CSS etc.
-- Parcel automat+ically configures the bundling process based on the types of files it encounters. It doesn't require extensive configuration files by default, making it easy to get started.
+- Parcel automatically configures the bundling process based on the types of files it encounters. It doesn't require extensive configuration files by default, making it easy to get started.
 - Parcel applies transformations and optimizations to the assets based on their types
 - parcel crates the dist folder for storing the optimized and bundled code
 - parcel starts a local development server (this server supports HMR)
@@ -270,3 +270,4 @@ NPX PARCEL INDEX.HTML
 - finds whether the package is present in the node_modules folder
 - if yes then execute it
 - if the package is not found, npx automatically downloads it from the NPM registry, runs the command, and then discards the package after the command has been executed.
+- npx can execute binaries from package without the need of installing them globally or in our project

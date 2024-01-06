@@ -11,4 +11,25 @@ COMPONENT COMPOSITION
 - first and second are standard way (JSX syntax)
 - we can use <comp/> if our component doesn't have any children
 - compName() is also valid way, but it is not jsx
-- 
+
+TYPE ATTRIBUTE IN THE SCRIPT TAG
+- the type attribute in the <script> tag is used to specify and describe the type of scripting language being used in the script. 
+- browsers automatically assume that the script is written in JavaScript, so we can skip the type attribute
+- type="module" indicates the browser that the script being used is an ECMAScript module
+
+ADVANTAGES OF USING ECMASCRIPT MODULES OVER SINGLE .JS FILE
+- ENCAPSULATION
+  - in modules code withing modules are encapsulated, hence variables and functions in a module are locally scoped, risks of naming conflicts are reduced
+  - no such encapsulation feature exists if we are using just a single .js file
+- CODE REUSABILITY
+  - modules can be easily reused in different parts of applications or even in other projects
+  - reusing specific parts of a single file requires copying and pasting the required parts, and this leads to duplication and maintenance challenges
+- DEPENDENCY MANAGEMENT 
+  - managing dependencies in modules is easy because of the import statements 
+  - manageing dependencies in single .js file is hard
+- READABILITY
+  - using modules increases readability as our code is now organized into smaller, focussed files 
+  - writing the whole code in one js file reduces readability
+- TREE SHAKING 
+  - unused code of modules are eliminated using tree shaking, thus reducing the size of bundles
+  - usused code in single file cannot be eliminated without human intervention

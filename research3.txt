@@ -107,19 +107,46 @@ WHAT IF WE INCLUDE DYNAMIC DATA INSIDE JSX
 ----------------------------
 CROSS SITE SCRIPTING ATTACKS
 ----------------------------
-- Cross Site Scripting is abbreviated as XSS
-- is a type of security vulnerability that occurs when an attacker injects malicious scripts (usually written in JavaScript) into a web application.
-- These scripts can then be executed in the context of a user's browser, leading to potential harm.
-- Imagine you have a website where users can input text, like a comment section. If the website doesn't properly validate or sanitize the user input, an attacker might enter a malicious script in their comment. When other users view that comment, the script gets executed in their browsers.
+- Cross-Site Scripting (XSS) is a type of security vulnerability that occurs when an attacker injects malicious scripts into web applications
+- These scripts are then executed in the context of the victim's browser, allowing the attacker to steal sensitive information, manipulate user sessions, or deface websites.
 
 --------------------
 TYPES OF XSS ATTACKS
 --------------------
-- Stored XSS: The malicious script is permanently stored on the target server, such as in a database. It affects anyone who views the particular page containing the injected script.
-- Reflected XSS: The malicious script is embedded in a link, email, or another resource. When a user clicks on the manipulated link, the script is executed. It's often a one-time attack and doesn't persist.
-- DOM-based XSS: The attack occurs in the Document Object Model (DOM) of the web page. Malicious scripts manipulate the DOM to achieve their goals.
-- XSS can have serious consequences like: theft of sensitive information, session hijacking, malicious actions on behalf of the user
-- Prevention of XSS:
-  - validate and sanitize input
-  - user frameworks and libraries with build in protections
-  - implement Content Security Policy (CSP)
+
+- Stored XSS
+  - The attacker puts a harmful script on the website (like in a comment or a post).
+  - Anyone who views that specific part of the website gets affected.
+  - example: imagine someone sneaking a note with a prank into a library book. The next person who reads that book sees the note and falls for the prank.
+
+- Reflected XSS
+  - The attacker tricks someone into clicking a special link with a harmful script.
+  - The person who clicks the link is immediately affected, but the script is not saved on the website.
+  - example: Think of someone giving you a link, and when you open it, a silly message pops up just for you. It's like a one-time trick.
+
+- DOM-based XSS: 
+  - The attacker messes with how a website's page looks or behaves using a harmful script. 
+  - The person visiting the manipulated webpage becomes a victim, and their browser runs the harmful script.
+  - Imagine someone changing a signpost so that you take a wrong turn. Similarly, an attacker changes something on a webpage, leading you to unintended consequences.
+
+--------------------------------
+MEASURES TO PREVENT  XSS ATTACKS
+--------------------------------
+- Keep Browsers Updated
+  - Newer browser versions often have security improvements.
+- Use a Reliable Security Software (anti-virus of anti-malware)
+  - security software can help detect and block malicious scripts.
+- Be Wary of Suspicious Link
+  - Malicious scripts often come through deceptive links
+  - hover over the links to see the actual web addresses before clicking 
+- Enable Browser Security Features
+  - Browsers have security settings that can help protect you.
+  - enable pop up blockers and security warning
+- Use Browser Extensions
+  - Extensions can add an extra layer of security.
+  - Consider using browser extensions that focus on security, like ad blockers or script blockers.
+- Stay Informed About Websites
+  - Be cautious with less-known websites, and check if they use "https://" in the web address for a secure connection.
+- Log Out After Using Websites
+  - Logging out reduces the risk of session-related attacks
+  - After using a website with your account, log out to end your session.

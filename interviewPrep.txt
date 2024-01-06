@@ -1,0 +1,41 @@
+EPISODE1
+
+1. What is react?
+2. What is react used for?
+3. What are the main features of react?
+
+4. What is a library?
+5. What benefit does using library give and how?
+
+6. What is a framework?
+7. What does it provide?
+
+8. Differentiate between libraries and frameworks on the basis of (a) size (b) learning curve (c) dictation of flow of application (d) flexibility (e) provision
+
+9. Name some popular JavaScript libraries and frameworks
+
+10. Do browsers understand React code?
+11. Why browsers don't understand React code?
+12. If browsers don't understand React code, then how does the browser render our page?
+
+13. What are the three ways in which we can get react into our project? 
+
+14. What does CDN stand for?
+15. What are CDNs?
+16. What are the advantages of using CDN links?
+17. How does using CDN links lead to faster loading?
+18. How does using CDN links improve our website performance?
+19. How does using CDN links ensure global reach of our website?
+20. How does using CDN links prevents overwhelming load on a single server?
+21. What are the disadvantages of using CDN links?
+22. In what case using CDN links might lead to unavailability of resources?
+23. How does using CDN links lead to limited control over the configuration and management of servers?
+24. How does using CDN links introduce security risks?
+
+25. Where do the React CDN links point to?
+26. What advantages does using CDN links have over other ways of getting CDN into our project?
+
+27. How does DOM manipulations turn out to be costly?
+
+EPISODE1 RESEARCH DONE
+CONTINUE WITH EPISODE1 HOMEWORK AND NOTES

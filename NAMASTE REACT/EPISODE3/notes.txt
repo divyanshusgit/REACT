@@ -1,1 +1,15 @@
-make a custom script for creating a dev build and a production build
+making a custom script for dev build
+
+making a custom script for prod build
+
+using jsx
+
+using functional components (for single line JSX and for multi line JSX)
+
+using functional components inside functional components
+
+using JavaScript inside JSX?
+
+Three ways to use functional components
+
+putting dynamic data inside jsx

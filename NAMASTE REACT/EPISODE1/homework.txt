@@ -1,23 +1,12 @@
 WHAT IS EMMET?
-- It is a set of plugins for various text editors and integrated development environments (IDEs) that allows developers to write abbreviated syntax and then expand it into well-formed HTML or CSS
-- Emmet is designed to speed up the coding process and reduce the amount of manual typing required.
-
-DIFFERENTIATE BETWEEN LIBRARY AND FRAMEWORK
-- library
-  - Call-based usage; the user decides when to use specific functions.
-  - The user retains control over the application flow.
-- framework
-  - Extending or implementing provided structures; the user fills in the details within the framework's structure.
-  - The framework dictates the flow of the application, and the user fills in the details.
-
-WHAT IS CDN? WHY DO WE USE IT?
-- done in research file
+- It is a set of plugins
+- write abbreviated syntax and expand it into well formed HTML or CSS. It speeds up the coding process.
 
 WHY IS REACT KNOWN AS REACT?
-- because "reacts" quickly to changes without reloading the whole page. It uses the virtual DOM to efficiently update parts of a webpage. It's built around components that "react" and update.
+- because it "reacts" quickly to the changes without reloading the whole page.
 
 WHAT IS CROSS ORIGIN IN THE SCRIPT TAG?
-- refers to the loading of JavaScript resources from a different domain than the one that served the main web page. 
+- refers to the loading of JavaScript resources from a different domain
 - Web browsers enforce a security feature known as the "same-origin policy" to prevent potentially harmful interactions between documents from different origins.
 - cross origin="anonymous"
   - The browser makes a cross-origin request without including any credentials (such as cookies or HTTP authentication).
@@ -29,8 +18,8 @@ WHAT IS CROSS ORIGIN IN THE SCRIPT TAG?
   - if you omit the cross origin attribute altogether, the browser defaults to treating the request as if it were same-origin, meaning it won't include credentials with the request.
 
 WHAT IS DIFFERENCE BETWEEN REACT AND REACT DOM
-- React is the core library for building UIs, it provides the fundamental features
-- React DOM is the package specifically designed for rendering React components in the context of a web browser. It provides the necessary methods and APIs to interact with the browser's Document Object Model (DOM) and render React components into HTML elements
+- React is the core library for building UIs, which provides the fundamental features.
+- React DOM is the package which provides us the methods for rendering react components on our browser and interacting with the browser's DOM.
 
 WHAT IS THE DIFFERENCE BETWEEN REACT.PRODUCTION.JS AND REACT.DEVELOPMENT.JS
 - the development version is used during the development

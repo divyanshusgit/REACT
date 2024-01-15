@@ -71,26 +71,26 @@ import ReactDOM from "react-dom/client";
 // rootElement.render(<NewElement/>);
 
 // MORE WAYS TO USE A FUNCTIONAL COMPONENT INSIDE A FUNCTIONAL COMPONENT
-// const headingName1 = 'first1';
-// const headingName2 = 'second2';
-// const FirstHeading = () => <h1>This is the {headingName1} heading</h1>;
-// const SecondHeading = () => <h1>This is the {headingName2} heading</h1>;
+const headingName1 = 'first1';
+const headingName2 = 'second2';
+const FirstHeading = () => <h1>This is the {headingName1} heading</h1>;
+const SecondHeading = () => <h1>This is the {headingName2} heading</h1>;
+const  NewElement = () => (
+    <div>
+        <FirstHeading></FirstHeading>
+        {SecondHeading()}
+    </div>
+);
+const rootElement = ReactDOM.createRoot(document.getElementById('rootElem'));
+rootElement.render(<NewElement/>); 
+
+// TRYING TO PUT DYNAMIC DATA IN OUR JSX
+// const sampleScript = `<script>alert("Hi")</script>`;
 // const  NewElement = () => (
 //     <div>
-//         <FirstHeading></FirstHeading>
-//         {SecondHeading()}
+//         {sampleScript}
+//         {console.log('Hi')}
 //     </div>
 // );
 // const rootElement = ReactDOM.createRoot(document.getElementById('rootElem'));
 // rootElement.render(<NewElement/>);
-
-// TRYING TO PUT DYNAMIC DATA IN OUR JSX
-const sampleScript = `<script>alert("Hi")</script>`;
-const  NewElement = () => (
-    <div>
-        {sampleScript}
-        {console.log('Hi')}
-    </div>
-);
-const rootElement = ReactDOM.createRoot(document.getElementById('rootElem'));
-rootElement.render(<NewElement/>);

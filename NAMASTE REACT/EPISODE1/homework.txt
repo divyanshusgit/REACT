@@ -5,6 +5,31 @@ WHAT IS EMMET?
 WHY IS REACT KNOWN AS REACT?
 - because it "reacts" quickly to the changes without reloading the whole page.
 
+WHAT IS A CROSS ORIGIN REQUEST?
+- refers to the scenario where a webpage served from one domain tries to make a request to a different domain for a resource such as an image, script, or data.
+- 
+
+WHAT IS SAME ORIGIN POLICY?
+- it is a security feature
+- implemented by web browsers to restrict web pages from making requests to a different domain than the one that served the web page
+- this prevents potential security vulnerabilities that could arise if web pages could freely interact with content from arbitrary origins
+- the core idea behind same origin policy is that webpages should only be able to make requests to the same origin as the one that served the webpage
+- This means that scripts, stylesheets, and other resources loaded by a web page can only come from the same origin.
+- SOP applies to requests made using JavaScript, especially those made using XMLHttpRequest or FetchAPI. It restricts the cross-origin requests initiated by scripts to enhance security and prevent potentially security vulnerabilities like XSS
+- Including an external image from internet into our HTML page using the img tag doesn't involve executing scripts and doesn't pose the same security risks as executing scripts from different origins.
+
+WHAT IS CORS?
+- CORS stands for cross origin resource sharing?
+- there are mechanisms or standards that allows servers to explicitly declare which origins are permitted to access their resources.
+- CORS is one such mechanism
+- when we make a request to a different origin, the browser first checks for the presence of CORS headers in the response from the server
+- if the server's response includes the the appropriate CORS header and explicitly allows our domain to access its resources, then the browser permits the cross origin request
+- if the response from the server doesn't contain appropriate CORS header, the browser will enforce the same origin policy, and the JavaScript code present in our webpage will be restricted from accessing the response data
+- the most crucial header that is checked is the Access-Control-Allow-Origin header, which specifies the allowed origin that can access the resource
+- If the header is missing, or it doesn't contain the origin of the requesting page, the browser will prevent the web page from accessing the response data
+- browser will throw a CORS related error, and the content of the response won't be accessible to our script
+- this is a security feature designed to prevent unauthorized cross-origin access and protect users from potential security risks
+
 WHAT IS CROSS ORIGIN IN THE SCRIPT TAG?
 - refers to the loading of JavaScript resources from a different domain
 - Web browsers enforce a security feature known as the "same-origin policy" to prevent potentially harmful interactions between documents from different origins.
@@ -17,6 +42,12 @@ WHAT IS CROSS ORIGIN IN THE SCRIPT TAG?
 - skipping cross origin request
   - if you omit the cross origin attribute altogether, the browser defaults to treating the request as if it were same-origin, meaning it won't include credentials with the request.
 
+ACCESS-CONTROL-ALLOW-CREDENTIALS
+- fetch and the XMLHttpRequest can contain the credentials option
+- now whether the browser sends these credentials along with the request or not is dependent on the Access-Control-Allow-Credentials header of the server
+- if the server includes "Access-Control-Allow-Credentials: true" It allows the browser to include credentials in the request
+- if the server includes "Access-Control-Allow-Credentials: false" It doesn't all the browser to include credentials in the request even if the client-side code requested them
+
 WHAT IS DIFFERENCE BETWEEN REACT AND REACT DOM
 - React is the core library for building UIs, which provides the fundamental features.
 - React DOM is the package which provides us the methods for rendering react components on our browser and interacting with the browser's DOM.
@@ -28,3 +59,5 @@ WHAT IS THE DIFFERENCE BETWEEN REACT.PRODUCTION.JS AND REACT.DEVELOPMENT.JS
 - the production phase provides minification and optimizations features 
 
 WHAT IS ASYNC AND DEFER
+
+NOT UNDERSTOOD: CROSS ORIGIN, SOP, CORS

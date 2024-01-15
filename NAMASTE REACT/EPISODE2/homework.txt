@@ -1,6 +1,6 @@
 WHAT IS NPX?
 - npx is a package manager tool which comes with the npm package manager and it is used to executed the node.js packages
-- npm simplifies the use of npm packages by allowing you to execute commands without the need for global installations
+- npx simplifies the use of npm packages by allowing you to execute commands without the need for global installations
 - when we run a npx parcel index.html command 
   - npx checks if parcel-bundler is already installed locally in our project's node_modules folder
   - if it doesn't found it there, it will install the parcel-bundler locally into the node_modules folder
